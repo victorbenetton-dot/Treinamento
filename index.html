@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '684791434663151');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+ <meta name="facebook-domain-verification" content="yuljuaofjl1bk5yahtnfvve1desti7" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mude Sua Vida com Leandro Boni | Treinamento Oficial</title>
+  <meta name="description" content="Domine o mercado de planos de saúde. 6 módulos práticos, linguagem direta e caminho claro para transformar conhecimento em faturamento real." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #000000;           /* preto base */
+      --bg-2: #0a0a0a;         /* painel escuro */
+      --ink: #f2f4f7;          /* texto principal */
+      --muted: rgba(242,244,247,.72);
+      --brand-1:#bf4f06;       /* laranja queimado */
+      --brand-2:#2c6d27;       /* verde profundo */
+      --brand-3:#6abbb9;       /* teal claro */
+      --cta-1:#bf4f06;         /* gradiente CTA start */
+      --cta-2:#2c6d27;         /* gradiente CTA end */
+      --ok:#2c6d27;
+      --warn:#ffd166;
+      --danger:#ff5c7a;
+      --card: rgba(255,255,255,.06);
+      --stroke: rgba(255,255,255,.12);
+      --shadow: 0 20px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+      --radius-sm: 12px;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0; background:
+        radial-gradient(900px 520px at 10% -10%, rgba(191,79,6,.22), transparent 60%),
+        radial-gradient(900px 520px at 110% 10%, rgba(106,187,185,.16), transparent 60%),
+        linear-gradient(180deg, var(--bg) 0%, #070707 100%);
+      color:var(--ink);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.5; letter-spacing:.2px;
+    }
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; height:auto; display:block}
+    .container{width:100%; max-width:1160px; margin-inline:auto; padding:0 20px}
+    .btn{display:inline-flex; align-items:center; gap:.65rem; border:none; cursor:pointer; font-weight:800; letter-spacing:.3px; padding:16px 22px; border-radius:14px; background:linear-gradient(90deg,var(--cta-1),var(--cta-2)); color:#071018; box-shadow: 0 8px 30px rgba(77,112,255,.35); transition:transform .15s ease, box-shadow .2s ease}
+    .btn:hover{transform:translateY(-1px); box-shadow: 0 14px 44px rgba(77,112,255,.45)}
+    .btn.outline{background:transparent; color:var(--ink); border:1px solid var(--stroke); box-shadow:none}
+    .chip{display:inline-block; padding:6px 10px; border:1px solid var(--stroke); border-radius:999px; font-size:.78rem; color:var(--muted); backdrop-filter: blur(6px); background:rgba(255,255,255,.04)}
+
+    /* Header */
+    header{position:sticky; top:0; z-index:60; backdrop-filter:saturate(160%) blur(10px); background:linear-gradient(180deg, rgba(7,10,25,.8), rgba(7,10,25,.4)); border-bottom:1px solid rgba(255,255,255,.06)}
+    header .wrap{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; gap:.75rem; align-items:center}
+    .brand-logo{width:36px;height:36px;border-radius:10px;background:conic-gradient(from 120deg, var(--brand-1), var(--brand-2), var(--brand-3)); box-shadow:0 4px 18px rgba(0,0,0,.35)}
+    .brand-name{font-weight:900; letter-spacing:.5px}
+    nav{display:none}
+    @media(min-width:940px){nav{display:flex; gap:22px; color:var(--muted)} nav a{opacity:.9}}
+
+    /* HERO CUSTOM - Fundo verde moderno com foto */
+    .hero-custom{position:relative; min-height:100vh; display:flex; align-items:center; justify-content:center; overflow:hidden}
+    .hero-custom::before{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg, #2c6d27 0%, #1a4a1f 50%, #0d2610 100%);
+      opacity:.95;
+    }
+    .hero-custom .geo-shapes{position:absolute; inset:0; overflow:hidden}
+    .hero-custom .geo-shapes::before{
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      width:384px;
+      height:384px;
+      background:rgba(44,109,39,.3);
+      transform:rotate(45deg) translateX(50%) translateY(-50%);
+    }
+    .hero-custom .geo-shapes::after{
+      content:'';
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:384px;
+      height:384px;
+      background:rgba(26,74,31,.3);
+      transform:rotate(-45deg) translateX(-50%) translateY(50%);
+    }
+    .hero-custom .grid{display:grid; gap:30px; grid-template-columns:1fr; padding:80px 0 40px; position:relative; z-index:10}
+    @media(min-width:980px){.hero-custom .grid{grid-template-columns: 1fr 1fr; align-items:center; gap:60px}}
+    .hero-custom .title{font-family:Montserrat, Inter, system-ui; font-size: clamp(3rem, 5vw, 5rem); line-height:1.05; font-weight:900; letter-spacing:.5px; margin:16px 0 20px; text-transform:uppercase}
+    .hero-custom .subtitle{font-size: clamp(1.1rem, 1.6vw, 1.4rem); color:rgba(255,255,255,.9); line-height:1.6}
+    .hero-custom .hero-img{position:relative; border-radius:24px; overflow:hidden; box-shadow: 0 30px 80px rgba(0,0,0,.5)}
+    .hero-custom .hero-img img{width:100%; height:auto; object-fit:cover; display:block}
+    .hero-cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:24px}
+
+    section{padding:64px 0}
+    .section-head{display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:28px}
+    .section-head h2{font-family:Montserrat; font-size: clamp(1.6rem, 3.4vw, 2.2rem); line-height:1.1; margin:0}
+    .section-head p{color:var(--muted); max-width:720px}
+
+    /* Features */
+    .features{display:grid; grid-template-columns:1fr; gap:14px}
+    @media(min-width:900px){.features{grid-template-columns: repeat(3, 1fr)}}
+    .feature{background:var(--card); border:1px solid var(--stroke); padding:18px; border-radius:16px}
+    .feature h4{margin:.5rem 0 .3rem}
+    .feature p{color:var(--muted)}
+
+    /* Modules */
+    .modules{display:grid; grid-template-columns:1fr; gap:14px}
+    @media(min-width:980px){.modules{grid-template-columns: repeat(3, 1fr)}}
+    .mod{background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)); border:1px solid var(--stroke); padding:18px; border-radius:16px}
+    .mod .num{display:inline-flex; width:34px; height:34px; align-items:center; justify-content:center; border-radius:10px; background:linear-gradient(180deg,var(--brand-2), var(--brand-1)); font-weight:800}
+    .mod h5{margin:.6rem 0 .2rem}
+    .mod p{color:var(--muted)}
+
+    /* Results */
+    .results{display:grid; grid-template-columns:1fr; gap:14px}
+    @media(min-width:980px){.results{grid-template-columns: repeat(3, 1fr)}}
+    .res{background:var(--card); border:1px solid var(--stroke); padding:18px; border-radius:16px}
+
+    /* FAQ */
+    .faq{display:grid; grid-template-columns:1fr; gap:12px}
+    details{background:var(--card); border:1px solid var(--stroke); border-radius:16px; padding:16px}
+    summary{cursor:pointer; font-weight:700}
+    details p{color:var(--muted); margin-top:10px}
+
+    /* Footer */
+    footer{padding:40px 0 60px; color:var(--muted)}
+    .foot{display:flex; gap:18px; justify-content:space-between; align-items:center; flex-wrap:wrap; border-top:1px solid var(--stroke); padding-top:20px}
+
+    /* Floating CTA */
+    .sticky-cta{position:fixed; inset: auto 18px 18px; z-index:70; display:flex; gap:12px; align-items:center; background:linear-gradient(90deg, rgba(191,79,6,.28), rgba(44,109,39,.28)); border:1px solid var(--stroke); padding:10px 12px; border-radius:14px; backdrop-filter: blur(8px)}
+    .sticky-cta .btn{padding:10px 14px}
+    @media(min-width:980px){.sticky-cta{inset:auto 28px 28px}}
+
+    /* Modal */
+    .modal{display:none; position:fixed; z-index:100; inset:0; background:rgba(0,0,0,.85); backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:20px}
+    .modal.active{display:flex}
+    .modal-content{background:var(--bg-2); border:1px solid var(--stroke); border-radius:var(--radius); padding:32px; max-width:520px; width:100%; max-height:90vh; overflow-y:auto; box-shadow:var(--shadow)}
+    .close{position:absolute; right:20px; top:20px; font-size:32px; font-weight:300; color:var(--muted); cursor:pointer; line-height:1; transition:color .2s}
+    .close:hover{color:var(--ink)}
+
+    /* Form */
+    .form-group{margin-bottom:18px}
+    .form-group label{display:block; margin-bottom:6px; font-weight:600; font-size:.9rem}
+    .form-group input, .form-group textarea{width:100%; padding:12px 14px; background:rgba(255,255,255,.06); border:1px solid var(--stroke); border-radius:var(--radius-sm); color:var(--ink); font-family:inherit; font-size:1rem; transition:border-color .2s, background .2s}
+    .form-group input:focus, .form-group textarea:focus{outline:none; border-color:var(--brand-1); background:rgba(255,255,255,.08)}
+    .form-group textarea{resize:vertical; min-height:100px}
+  </style>
+</head>
+<body>
+  <!-- Meta Pixel Code (noscript) -->
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=684791434663151&ev=PageView&noscript=1"
+  /></noscript>
+
+  <header>
+    <div class="container wrap">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <div class="brand-name">Leandro Boni • Treinamento</div>
+      </div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#investimento">Investimento</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="btn" onclick="openModal()">Garantir minha vaga</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO CUSTOMIZADO - Mude sua vida com Leandro Boni -->
+    <section class="hero-custom">
+      <div class="geo-shapes"></div>
+      <div class="container grid">
+        <div>
+          <h1 class="title">Mude Sua Vida com<br>Leandro Boni</h1>
+          <p class="subtitle">Transforme sua mentalidade, alcance seus objetivos e conquiste o sucesso que você merece. Coaching e mentoria para transformação pessoal e profissional.</p>
+          <div class="hero-cta">
+            <button class="btn" onclick="openModal()">Comece Agora</button>
+            <a class="btn outline" href="#sobre">Saiba Mais</a>
+          </div>
+        </div>
+        <div>
+          <div class="hero-img">
+            <img src="/hero-image.png" alt="Leandro Boni - Coach e Mentor">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE / PROMESSA -->
+    <section id="sobre">
+      <div class="container">
+        <div class="section-head">
+          <h2>Você não precisa de sorte. Precisa de domínio.</h2>
+          <p>Objetivo: te dar clareza, técnica e repertório para vender planos de saúde com consistência, atrair clientes certos e construir renda sólida. Sem papo motivacional vazio, só o que funciona.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <span class="chip">Direto ao ponto</span>
+            <h4>Passo a passo aplicável</h4>
+            <p>Do entendimento dos tipos de planos, cenários e decisões reais.</p>
+          </div>
+          <div class="feature">
+            <span class="chip">Mercado Real</span>
+            <h4>O que ninguém te conta</h4>
+            <p>Carências, documentações, reajustes, upgrades/downgrades: bastidores explicados sem rodeios.</p>
+          </div>
+          <div class="feature">
+            <span class="chip">Foco em faturamento</span>
+            <h4>Estratégias que convertem</h4>
+            <p>Técnicas práticas para aumentar ticket, reduzir objeções e fechar contratos com previsibilidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO / MÓDULOS -->
+    <section id="conteudo">
+      <div class="container">
+        <div class="section-head">
+          <h2>Os 6 módulos intensos</h2>
+          <p>Clareza e objetividade. Cada módulo resolve um problema específico do seu dia a dia no comercial.</p>
+        </div>
+        <div class="modules">
+          <div class="mod">
+            <span class="num">1</span>
+            <h5>Teoria do Plano de Saúde</h5>
+            <p>Fundamentos, termos essenciais e visão estratégica do mercado. Para falar como quem sabe.</p>
+          </div>
+          <div class="mod">
+            <span class="num">2</span>
+            <h5>Tipos de Contratação</h5>
+            <p>Individual/Familiar, Adesão, Empresarial (MEI/PME). Como enquadrar corretamente e evitar retrabalho.</p>
+          </div>
+          <div class="mod">
+            <span class="num">3</span>
+            <h5>Upgrade &amp; Downgrade</h5>
+            <p>Quando propor, como defender valor e minimizar churn com âncoras e argumentos prontos.</p>
+          </div>
+          <div class="mod">
+            <span class="num">4</span>
+            <h5>Carências (ANS x Companhias)</h5>
+            <p>O que muda na prática, exceções, portabilidade e as pegadinhas que travam a venda.</p>
+          </div>
+          <div class="mod">
+            <span class="num">5</span>
+            <h5>Faixa Etária &amp; Reajustes</h5>
+            <p>Preços, impactos comerciais, como negociar sem perder margem e sem prometer o impossível.</p>
+          </div>
+          <div class="mod">
+            <span class="num">6</span>
+            <h5>Documentação &amp; Fechamento</h5>
+            <p>Checklist, fluxo sem atrito e scripts de fechamento para tirar o "depois eu vejo" do cliente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultados">
+      <div class="container">
+        <div class="section-head">
+          <h2>O que você ganha na prática</h2>
+          <p>Sem teoria solta. Saída de cada módulo já com aplicáveis para o campo.</p>
+        </div>
+        <div class="results">
+          <div class="res">
+            <h4>Confiança para vender</h4>
+            <p>Segurança no discurso, domínio técnico e narrativa de autoridade sem soar forçado.</p>
+          </div>
+          <div class="res">
+            <h4>Processo que fecha</h4>
+            <p>Do lead ao contrato: passos claros, materiais de apoio e scripts objetivos.</p>
+          </div>
+          <div class="res">
+            <h4>Faturamento previsível</h4>
+            <p>Funil ajustado e métricas simples para acompanhar crescimento mês a mês.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="investimento">
+      <div class="container pricing">
+        <div class="card">
+          <span class="chip">Investimento</span>
+          <h2 style="margin:.4rem 0 0">Acesso imediato por <span style="color:var(--ok)"></span></h2>
+          <p class="subtitle">Pagamento único. Acesso por 12 meses. Materiais de apoio incluídos. Mentoria com Leandro é produto à parte.</p>
+          <ul class="incl">
+            <li><span class="tick"></span> 6 módulos em vídeo (curtos e diretos)</li>
+            <li><span class="tick"></span> Material de apoio</li>
+            <li><span class="tick"></span> Atualizações dentro do período de acesso</li>
+            <li><span class="tick"></span> Certificado de conclusão</li>
+          </ul>
+          <div class="hero-cta" style="margin-top:16px">
+            <button class="btn" onclick="openModal()">Acesso Vip</button>
+            <a class="btn outline" href="#faq">Ver perguntas frequentes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Dúvidas frequentes</h2>
+          <p>Transparência total. Sem asteriscos escondidos.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>O curso é ao vivo?</summary>
+            <p>Não. O treinamento é 100% online e gravado, com acesso imediato após a compra. Você assiste no seu ritmo.</p>
+          </details>
+          <details>
+            <summary>Por quanto tempo terei acesso?</summary>
+            <p>12 meses de acesso, incluindo atualizações de conteúdo feitas nesse período.</p>
+          </details>
+          <details>
+            <summary>Tem certificado?</summary>
+            <p>Sim. Ao concluir os módulos você emite seu certificado.</p>
+          </details>
+          <details>
+            <summary>Mentoria individual está inclusa?</summary>
+            <p>Não. A mentoria com Leandro é um produto premium vendido separadamente.</p>
+          </details>
+          <details>
+            <summary>Qual a forma de pagamento?</summary>
+            <p>Cartão de crédito, Pix e boleto (via plataforma de pagamentos). Parcelamento sujeito às condições do gateway.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div class="brand"><div class="brand-logo"></div><div>Leandro Boni • Treinamento</div></div>
+        <div class="chip">© <span id="year"></span> Todos os direitos reservados</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta">
+    <span class="chip">Oferta de lançamento</span>
+    <button class="btn" onclick="openModal()">Garantir Vaga</button>
+  </div>
+
+  <!-- Modal de Formulário -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 style="font-family:Montserrat; margin-top:0">Garanta sua vaga</h2>
+      <p style="color:var(--muted); margin-bottom:24px">Preencha os dados abaixo e entraremos em contato</p>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Nome completo *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Telefone (WhatsApp) *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Por que você quer fazer este treinamento?</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn" style="width:100%">Enviar</button>
+        <p id="formStatus" style="margin-top:12px; text-align:center; color:var(--ok)"></p>
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{ const id=a.getAttribute('href'); const el=document.querySelector(id); if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'});} });
+    });
+
+    // Modal functions
+    function openModal() {
+      document.getElementById('contactModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('contactModal').classList.remove('active');
+      document.body.style.overflow = 'auto';
+      document.getElementById('contactForm').reset();
+      document.getElementById('formStatus').textContent = '';
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('contactModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    // EmailJS Configuration
+    // IMPORTANTE: Você precisa configurar sua conta no EmailJS
+    // 1. Crie uma conta em https://www.emailjs.com/
+    // 2. Adicione um serviço de email (Gmail, Outlook, etc)
+    // 3. Crie um template de email
+    // 4. Substitua os valores abaixo com suas credenciais
+
+    emailjs.init('riSEmgRdNZFdUDomP'); // Substitua com sua chave pública do EmailJS
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const btn = e.target.querySelector('button[type="submit"]');
+      const status = document.getElementById('formStatus');
+
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+      status.textContent = '';
+
+      // Prepare template parameters
+      const templateParams = {
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        message: document.getElementById('message').value || 'Não informado',
+        to_email: 'joaogabrielfariassantos2@gmail.com' // Substitua com o email do admin
+      };
+
+      // Send email via EmailJS
+      emailjs.send('service_4llccsg', 'template_s8upwfo', templateParams)
+        .then(function(response) {
+          status.style.color = 'var(--ok)';
+          status.textContent = '✓ Mensagem enviada! Redirecionando...';
+          btn.textContent = 'Enviado';
+          btn.disabled = false;
+
+          // Redireciona para a página de vendas após 1 segundo
+          setTimeout(() => {
+            window.location.href = 'https://pay.kiwify.com.br/ooKphKh';
+          }, 1000);
+        }, function(error) {
+          status.style.color = 'var(--danger)';
+          status.textContent = '✗ Erro ao enviar. Tente novamente.';
+          btn.textContent = 'Enviar';
+          btn.disabled = false;
+          console.error('EmailJS error:', error);
+        });
+    });
+  </script>
+</body>
+</html>
